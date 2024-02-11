@@ -36,8 +36,29 @@ $ yarn run test:cov
 
 ## Memo
 
+- 개발 환경 버전
+
+  - node v20.11.0
+  - npm 10.2.4
+  - yarn 1.22.21
+  - typescript 5.3.3
+
+- vscode settings
+
+  ```json
+  {
+    "workbench.colorTheme": "Default Dark+",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+  ```
+
 - eslintrc.js에 추가한 설정
-  ```javascript
+
+  ```js
   rules: {
   	<!-- [lf -> auto] Delete `␍` eslint (prettier/prettier) -->
   	'prettier/prettier': [
@@ -50,4 +71,5 @@ $ yarn run test:cov
   	'@typescript-eslint/no-unused-vars': 'warn'
   }
   ```
+
 - `nest g resource [name]` 명령어로 만들고자 하는 리소스의 CRUD 보일러플레이트 코드를 한 번에 생성할 수 있다.
