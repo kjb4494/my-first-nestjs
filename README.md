@@ -73,10 +73,22 @@ $ yarn run test:cov
   ```
 
 - Added Modules
+
   1. **uuid**: `yarn add uuid`
   1. **@types/uuid**: `yarn add @types/uuid`
   1. **[_class-validator_](https://github.com/typestack/class-validator?tab=readme-ov-file#validation-decorators)**: `yarn add class-validator`
   1. **class-transformer**: `yarn add class-transformer`
+  1. **typeorm + postgres**: `yarn add pg typeorm @nestjs/typeorm`
+
+- postgres docker
+
+  ```shell
+  docker run --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=P@ssw0rd -d postgres:latest
+  ```
+
+  ```posgres
+  CREATE DATABASE "board-db";
+  ```
 
 ## Memo
 
