@@ -1,0 +1,8 @@
+-- Create Board
+curl -X POST -H "Content-Type: application/json" -d "{\"title\": \"test title\", \"description\": \"test description\"}" http://localhost:3000/boards
+
+-- Delete Board
+curl -X DELETE -H "Content-Type: application/json" http://localhost:3000/boards/93dc7030-cbc4-11ee-ac60-c1c573b09e1e
+
+-- Update Board Status
+curl -X PATCH -H "Content-Type: application/json" -d "{\"status\": \"PRIVATE\"}" http://localhost:3000/boards/93dc7030-cbc4-11ee-ac60-c1c573b09e1e/status
