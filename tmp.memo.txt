@@ -5,4 +5,7 @@ curl -X POST -H "Content-Type: application/json" -d "{\"title\": \"test title\",
 curl -X DELETE -H "Content-Type: application/json" http://localhost:3000/boards/93dc7030-cbc4-11ee-ac60-c1c573b09e1e
 
 -- Update Board Status
-curl -X PATCH -H "Content-Type: application/json" -d "{\"status\": \"PRIVATE\"}" http://localhost:3000/boards/93dc7030-cbc4-11ee-ac60-c1c573b09e1e/status
+curl -X PATCH -H "Content-Type: application/json" -d "{\"status\": \"PRIVATE\"}" http://localhost:3000/boards/48d5d9a0-cbce-11ee-ac77-c75c556609cf/status
+
+-- Create Board Empty Valid
+curl -X POST -H "Content-Type: application/json" -d "{\"title\": \"\", \"description\": \"\"}" http://localhost:3000/boards

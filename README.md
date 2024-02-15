@@ -34,16 +34,16 @@ $ yarn run test:cov
 
 ---
 
-## Memo
+## Env
 
-- 개발 환경 버전
+- Versions
 
   - node v20.11.0
   - npm 10.2.4
   - yarn 1.22.21
   - typescript 5.3.3
 
-- vscode settings
+- VSCode Settings
 
   ```json
   {
@@ -56,7 +56,7 @@ $ yarn run test:cov
   }
   ```
 
-- eslintrc.js에 추가한 설정
+- Added eslintrc.js Settings
 
   ```js
   rules: {
@@ -71,5 +71,13 @@ $ yarn run test:cov
   	'@typescript-eslint/no-unused-vars': 'warn'
   }
   ```
+
+- Added Modules
+  1. **uuid**: `yarn add uuid`
+  1. **@types/uuid**: `yarn add @types/uuid`
+  1. **[_class-validator_](https://github.com/typestack/class-validator?tab=readme-ov-file#validation-decorators)**: `yarn add class-validator`
+  1. **class-transformer**: `yarn add class-transformer`
+
+## Memo
 
 - `nest g resource [name]` 명령어로 만들고자 하는 리소스의 CRUD 보일러플레이트 코드를 한 번에 생성할 수 있다.
