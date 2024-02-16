@@ -2,7 +2,7 @@
 curl -X GET -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJ0ZXN0ZXI0IiwiaWF0IjoxNzA4MDY2NjAyLCJleHAiOjE3MDgwNzAyMDJ9.JWQK4Ia_1cDk8fxnsH5-nTwcQ8PKc0fHXZo5R01ghvM" http://localhost:3000/boards
 
 -- Create Board
-curl -X POST -H "Content-Type: application/json" -d "{\"title\": \"test title\", \"description\": \"test description\"}" http://localhost:3000/boards
+curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJ0ZXN0ZXI0IiwiaWF0IjoxNzA4MDcwMDM0LCJleHAiOjE3MDgwNzM2MzR9.wThDtLF6VsVDtsZQjmnF-I5Nk2ubox5dgmlowM0IMrE" -d "{\"title\": \"test title\", \"description\": \"test description\"}" http://localhost:3000/boards
 
 -- Delete Board
 curl -X DELETE -H "Content-Type: application/json" http://localhost:3000/boards/1

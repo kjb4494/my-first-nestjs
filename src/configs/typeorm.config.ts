@@ -9,4 +9,5 @@ export const typeORMConfig: TypeOrmModuleOptions = {
   database: 'board-db',
   entities: [__dirname + '/../**/*.entity.{js,ts}'],
   synchronize: true,
+  logging: true,
 };
