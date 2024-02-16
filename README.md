@@ -81,6 +81,8 @@ $ yarn run test:cov
   1. **typeorm + postgres**: `yarn add pg typeorm @nestjs/typeorm`
   1. **bcryptjs**: `yarn add bcryptjs @types/bcryptjs`
   1. **jwt + passport**: `yarn add @nestjs/jwt @nestjs/passport passport passport-jwt @types/passport-jwt`
+  1. **cross-env**: `yarn add --dev cross-env` (for windows env)
+  1. **config**: `yarn add config`
 
 - postgres docker
 

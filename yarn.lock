@@ -1999,6 +1999,13 @@ concat-stream@^1.5.2:
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
 
+config@^3.3.11:
+  version "3.3.11"
+  resolved "https://registry.yarnpkg.com/config/-/config-3.3.11.tgz#009e802631363e456d4cf57767a65c1549069ba2"
+  integrity sha512-Dhn63ZoWCW5EMg4P0Sl/XNsj/7RLiUIA1x1npCy+m2cRwRHzLnt3UtYtxRDMZW/6oOMdWhCzaGYkOcajGgrAOA==
+  dependencies:
+    json5 "^2.2.3"
+
 consola@^2.15.0:
   version "2.15.3"
   resolved "https://registry.npmjs.org/consola/-/consola-2.15.3.tgz"
@@ -2077,7 +2084,14 @@ create-require@^1.1.0:
   resolved "https://registry.npmjs.org/create-require/-/create-require-1.1.1.tgz"
   integrity sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==
 
-cross-spawn@^7.0.0, cross-spawn@^7.0.2, cross-spawn@^7.0.3:
+cross-env@^7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-7.0.3.tgz#865264b29677dc015ba8418918965dd232fc54cf"
+  integrity sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==
+  dependencies:
+    cross-spawn "^7.0.1"
+
+cross-spawn@^7.0.0, cross-spawn@^7.0.1, cross-spawn@^7.0.2, cross-spawn@^7.0.3:
   version "7.0.3"
   resolved "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.3.tgz"
   integrity sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==
