@@ -79,6 +79,8 @@ $ yarn run test:cov
   1. **[_class-validator_](https://github.com/typestack/class-validator?tab=readme-ov-file#validation-decorators)**: `yarn add class-validator`
   1. **class-transformer**: `yarn add class-transformer`
   1. **typeorm + postgres**: `yarn add pg typeorm @nestjs/typeorm`
+  1. **bcryptjs**: `yarn add bcryptjs @types/bcryptjs`
+  1. **jwt + passport**: `yarn add @nestjs/jwt @nestjs/passport passport passport-jwt @types/passport-jwt`
 
 - postgres docker
 

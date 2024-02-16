@@ -1,3 +1,6 @@
+-- Get All Boards
+curl -X GET -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJ0ZXN0ZXI0IiwiaWF0IjoxNzA4MDY2NjAyLCJleHAiOjE3MDgwNzAyMDJ9.JWQK4Ia_1cDk8fxnsH5-nTwcQ8PKc0fHXZo5R01ghvM" http://localhost:3000/boards
+
 -- Create Board
 curl -X POST -H "Content-Type: application/json" -d "{\"title\": \"test title\", \"description\": \"test description\"}" http://localhost:3000/boards
 
@@ -9,3 +12,12 @@ curl -X PATCH -H "Content-Type: application/json" -d "{\"status\": \"PRIVATE\"}"
 
 -- Create Board Empty Valid
 curl -X POST -H "Content-Type: application/json" -d "{\"title\": \"\", \"description\": \"\"}" http://localhost:3000/boards
+
+-- Signup
+curl -X POST -H "Content-Type: application/json" -d "{\"username\": \"tester4\", \"password\": \"1q2w3e4r5t\"}" http://localhost:3000/auth/signup
+
+-- Login
+curl -X POST -H "Content-Type: application/json" -d "{\"username\": \"tester4\", \"password\": \"1q2w3e4r5t\"}" http://localhost:3000/auth/login
+
+-- Auth Test
+curl -X GET -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJ0ZXN0ZXI0IiwiaWF0IjoxNzA4MDY2NjAyLCJleHAiOjE3MDgwNzAyMDJ9.JWQK4Ia_1cDk8fxnsH5-nTwcQ8PKc0fHXZo5R01ghvM" http://localhost:3000/auth/test
